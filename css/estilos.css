@@ -9,13 +9,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 /* -------------Variables */
 :root{
---green-color:#7ACC2D;
+--grey-color:#282828;
 --white-color:white;
 --black-color:#313337;
 /* Tipografía */
 --normal:12px;
 /* Espaciado */
 --space:10px;
+--space-2:20px;
 /* Box shadow */
 --box:0px 0 2px 1px #e6e5e9;
 }
@@ -27,34 +28,51 @@ html,body{
   font-size: var(--normal);
   font-family: 'Open Sans', sans-serif;
 }
+p,label{
+  font-size: var(--normal);
+}
+label{
+  padding-bottom: var(--space);
+}
 
 
 nav{
   display: flex;
-  background-color: var(--green-color);
-  padding: var(--space);
+  background-color: var(--grey-color);
   color: var(--white-color);
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  min-height: 60px;
+  padding: var(--space);
 }
-
 nav ul{
   display: flex;
+  padding-right:  10px;
 }
 
-nav li{
+nav ul li{
   padding-left: 20px;
   list-style: none;
-
+  margin-right: var(--space);
 }
 
 nav li a{
-  color: var(--black-color);
+  font-size: var(--normal);
+  color: var(--white-color);
   text-decoration: none;
 }
 
 nav li a:hover{
-  color: var(--white-color);
+  text-decoration: underline;
+
+}
+nav li:hover{
+  transform: scale(1.10);
+  transition: linear;
+}
+hr{
+  opacity: .2;
 }
 
 /* ------------------------ Main section */
@@ -66,30 +84,39 @@ nav li a:hover{
 
 .products{
   background-image: url("../images/curve.png");
-  max-height: 50px;
+  height: 95px;
   background-size: cover;
   background-position: center top;
-  padding:20%;
+  background-repeat: no-repeat;
+  padding:15%;
   display: flex;
 }
 
 .product{
   padding: var(--space);
-  margin-top: -240px;
+  margin-top: -226px;
 }
-.product .content{
+.product p{
+  width: 100%;
+}
+.content{
   background-color: var(--white-color);
-  padding: var(--space);
+  padding: var(--space-2);
   box-shadow: var(--box);
+  border-radius: 3px;
 }
 .img_content{
   text-align: center;
 }
+.img_content img{
+  height: 150px;
+  width: 100%;
+}
 
 .main_button{
-  background-color: var(--green-color);
+  background-color: var(--grey-color);
   width: 100%;
-  padding: var(--space);
+  padding: var(--space-2);
   font-size: var(--normal);
   color: var(--white-color);
   border:0;
@@ -98,5 +125,87 @@ nav li a:hover{
 }
 
 .main_button:hover{
-  background-color: #5e9e22;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border: var(--grey-color) solid 1px;
+}
+.sections{
+  padding: 10%;
+  display: flex;
+}
+.section{
+  padding: 0px 5%;
+  text-align: center;
+}
+.section:hover{
+border-radius: 5px;
+  transform: scale(1.05);
+  transition: linear;
+}
+.img_content_section img{
+  max-height: 150px;
+}
+.text_section{
+  text-align: justify;
+}
+.coments{
+  padding: 5%;
+  display: flex;
+}
+.coment{
+  padding: var(--space);
+}
+.coment:hover {
+  border-radius: 5px;
+  transform: scale(1.05);
+  transition: linear;
+}
+.img_content_coment img{
+  width: 100%;
+}
+
+.coment .text{
+  padding: var(--space);
+}
+
+/* --------------------------------------modulos */
+.formulario_venta{
+  padding: 15% 10%;
+}
+.modulo{
+background: var(--white-color);
+box-shadow: var(--box);
+padding: var(--space);
+}
+.data{
+margin-top: var(--space);
+width: 100%;
+height: 35px;
+border-radius: 2px;
+border:1px solid var(--grey-color);
+box-sizing: border-box;
+}
+.modulo_image{
+  text-align: center;
+  width: 100%;
+}
+.modulo_image img{
+  width: 100%;
+
+}
+.modulo .main_button{
+  margin-top: var(--space);
+}
+/* -------------------------------------- fin de losmodulos */
+
+/*--------------------------------------- Footer*/
+footer{
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
 }

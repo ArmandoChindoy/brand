@@ -5,4 +5,4 @@ var apellido="González";
 
 var nombreCompleto=nombre+" "+apellido;
 
-alert("Holi "+nombreCompleto);
+alert("Hola "+nombreCompleto);

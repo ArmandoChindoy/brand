@@ -1,0 +1,30 @@
+ @media (max-width: 600px){
+	.mainsection{
+		padding: 4%;
+	}
+	.products{
+		display: inherit;
+		height: auto;
+	}
+	.product{
+		margin-top:auto; 
+	}
+	.sections{
+		display: inherit;
+		height: auto;
+	}
+	.section{
+		margin-top:auto;
+		padding: 5%; 
+	}
+	.coments{
+		display: inherit;
+		height: auto;
+		
+	}
+	.coment{
+		margin-top: auto;
+		padding: 5%;
+	}
+
+}

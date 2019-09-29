@@ -1,7 +1,7 @@
 var a=1;
 var b=2;
-var nombre="Rulótico";
-var apellido="González";
+var nombre="Armando";
+var apellido="Chindoy";
 
 var nombreCompleto=nombre+" "+apellido;
 

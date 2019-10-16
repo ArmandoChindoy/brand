@@ -75,11 +75,40 @@ hr{
   opacity: .2;
 }
 
+/* ---------------------------Search_Box */
+
+.search_section{
+  display: flex;
+  height: 300px;
+  align-items: center;
+}
+.input_part{
+  display: inline-block;
+}
+.input_part label{
+text-transform: uppercase;
+}
+.input_part input{
+  border: lightgray solid 2px;
+}
+.search_box{
+  width: 90vw;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: auto;
+  font-style:"Open-sans";
+}
+
+
+/* ------------------------------Here finish the Search_Box */
+
 /* ------------------------ Main section */
 
 .main_section{
   padding: 15%;
   text-align: center;
+
 }
 
 .products{
@@ -191,7 +220,6 @@ box-sizing: border-box;
 }
 .modulo_image img{
   width: 100%;
-
 }
 .modulo .main_button{
   margin-top: var(--space);

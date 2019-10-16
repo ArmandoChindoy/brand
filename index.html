@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,11 @@
   <link rel="stylesheet" href="css/animation.css">
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="css/estilos_mobile.css">
+  <link rel="icon" href="images/hotel.png">
 
   <title>Brand</title>
 </head>
+
 <body>
 
   <!-- Aquí empieza el navbar -->
@@ -19,7 +22,8 @@
     </div>
     <div class="nav_options">
       <ul>
-        <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9KA9XMSALSZFY"><img src="images/online-store.png" alt="carrito.png"></a></li>
+        <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9KA9XMSALSZFY"><img
+              src="images/online-store.png" alt="carrito.png"></a></li>
         <li><a href="calendar.html">Shedule</a></li>
       </ul>
     </div>
@@ -27,32 +31,67 @@
 
   <!-- Aquí acaba el navbar -->
 
-  <div class="main_section" >
+  <section class="search_section">
+    <div class="search_box">
+      <form action="">
+        <div class="input_part">
+          <label for="origen">origen</label>
+          <br>
+          <input type="text" name="origen" placeholder="Ingresa tu cuidad">
+        </div>
+        <div class="input_part">
+          <label for="destino">destino</label>
+          <br>
+          <input type="text" name="destino" placeholder="Ingresa tu Destino">
+        </div>
+        <div class="input_part">
+          <label for="fecha">fechas</label>
+          <br>
+          <input type="text" name="fecha_ida" placeholder="ida">
+        </div>
+        <input type="text" name="fecha_vuelta" placeholder="vuelta">
+        <div class="input_part">
+          <label for="habitaciones">habitaciones</label>
+          <br>
+          <input type="text" name="habitaciones">
+        </div>
+        <div class="input_part">
+          <label for="guests">personas</label>
+          <br>
+          <input type="text" name="guests">
+        </div>
+        <button type="">Buscar</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="main_section">
     <h1 class="fadeIn">
       Ques esperas haz tu reserva ya
     </h1>
   </div>
+
   <!-- Here starts the section of products -->
   <div class="products">
     <div class="product  fadeInUp">
       <div class="content">
-              <div class="img_content">
-                <img src="images/miami.jpg" alt="">
-              </div>
-              <h1>Miami</h1>
-              <p>Miles de productos hay en el mercado, lorempero nada como una caja con gatitos</p>
-              <a href="register.html"><button  class="main_button">Lo quiero</button></a>
-              
+        <div class="img_content">
+          <img src="images/miami.jpg" alt="">
+        </div>
+        <h1>Miami</h1>
+        <p>Miles de productos hay en el mercado, lorempero nada como una caja con gatitos</p>
+        <a href="register.html"><button class="main_button">Lo quiero</button></a>
+
       </div>
     </div>
     <div class="product fadeInUp">
       <div class="content">
-              <div class="img_content">
-                <img src="images/santa_marta.jpg" alt="">
-              </div>
-              <h1>Santa Marta</h1>
-              <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
-              <a href="register.html"><button  class="main_button">Lo quiero</button></a>
+        <div class="img_content">
+          <img src="images/santa_marta.jpg" alt="">
+        </div>
+        <h1>Santa Marta</h1>
+        <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+        <a href="register.html"><button class="main_button">Lo quiero</button></a>
       </div>
     </div>
   </div>
@@ -61,32 +100,32 @@
   <div class="sections">
     <div class="section">
       <div class="content">
-              <div class="img_content_section">
-                <img src="images/sale.png" alt="sale.png">
-              </div>
-              <h1>Sales</h1>
-              <p class="text_section">Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
-              
+        <div class="img_content_section">
+          <img src="images/sale.png" alt="sale.png">
+        </div>
+        <h1>Sales</h1>
+        <p class="text_section">Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+
       </div>
     </div>
     <div class="section">
       <div class="content">
-              <div class="img_content_section">
-                <img src="images/hotel.png" alt="">
-              </div>
-              <h1>Hotel</h1>
-              <p class="text_section">Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
-              
+        <div class="img_content_section">
+          <img src="images/hotel.png" alt="">
+        </div>
+        <h1>Hotel</h1>
+        <p class="text_section">Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+
       </div>
     </div>
     <div class="section">
       <div class="content">
-              <div class="img_content_section">
-                <img src="images/calendar.png" alt="">
-              </div>
-              <h1>Calendar</h1>
-              <p class="text_section">Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
-              
+        <div class="img_content_section">
+          <img src="images/calendar.png" alt="">
+        </div>
+        <h1>Calendar</h1>
+        <p class="text_section">Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+
       </div>
     </div>
   </div>
@@ -95,46 +134,46 @@
   <div class="coments">
     <div class="coment">
       <div class="content">
-              <div class="img_content_coment">
-                <img src="images/p1.png" alt="">
-              </div>
-              <div class="text">
-              <h1>Joseph</h1>
-              <p >Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
-             </div>
+        <div class="img_content_coment">
+          <img src="images/p1.png" alt="">
+        </div>
+        <div class="text">
+          <h1>Joseph</h1>
+          <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+        </div>
       </div>
     </div>
     <div class="coment">
       <div class="content">
-              <div class="img_content_coment">
-                <img src="images/p2.png" alt="">
-              </div>
-              <div class="text">
-              <h1>Caroline</h1>
-              <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
-              </div>
+        <div class="img_content_coment">
+          <img src="images/p2.png" alt="">
+        </div>
+        <div class="text">
+          <h1>Caroline</h1>
+          <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+        </div>
       </div>
     </div>
     <div class="coment">
       <div class="content">
-              <div class="img_content_coment">
-                <img src="images/p3.png" alt="">
-              </div>
-              <div class="text">
-              <h1>Dave</h1>
-              <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
-              </div>
+        <div class="img_content_coment">
+          <img src="images/p3.png" alt="">
+        </div>
+        <div class="text">
+          <h1>Dave</h1>
+          <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+        </div>
       </div>
     </div>
     <div class="coment">
       <div class="content">
-              <div class="img_content_coment">
-                <img src="images/p4.png" alt="">
-              </div>
-              <div class="text">
-              <h1>Malcom</h1>
-              <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
-              </div>
+        <div class="img_content_coment">
+          <img src="images/p4.png" alt="">
+        </div>
+        <div class="text">
+          <h1>Malcom</h1>
+          <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+        </div>
       </div>
     </div>
   </div>
@@ -142,12 +181,13 @@
   <!-- Aqui termina la seccion de comentarios -->
 
   <!-- footer comienza aqui -->
-<footer class="fadeInDown">
-      <div class="option">Terminos y condiciones</div>
-      <div class="option">contacto@brand.com</div>
-    </footer>
-   <!-- El footer termina aqui -->
+  <footer class="fadeInDown">
+    <div class="option">Terminos y condiciones</div>
+    <div class="option">contacto@brand.com</div>
+  </footer>
+  <!-- El footer termina aqui -->
 
-<script src="scripts/scrip.js"></script>
+  <script src="scripts/scrip.js"></script>
 </body>
+
 </html>

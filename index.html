@@ -2,192 +2,221 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/animation.css">
-  <link rel="stylesheet" href="css/estilos.css">
-  <link rel="stylesheet" href="css/estilos_mobile.css">
-  <link rel="icon" href="images/hotel.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos_mobile.css">
+    <link rel="icon" href="images/hotel.png">
+    <link rel="stylesheet" href="Icons/style.css">
 
-  <title>Brand</title>
+    <title>Brand</title>
 </head>
 
 <body>
 
-  <!-- Aquí empieza el navbar -->
-  <nav class="fadeInDown">
-    <div class="brand_image">
-      <a href="index.html"><img src="images/logo2.png" alt=""></a>
-    </div>
-    <div class="nav_options">
-      <ul>
-        <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9KA9XMSALSZFY"><img
-              src="images/online-store.png" alt="carrito.png"></a></li>
-        <li><a href="calendar.html">Shedule</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- Aquí empieza el navbar -->
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <nav class="fadeInDown menu">
+        <div class="brand_image">
+            <a href="index.html"><img src="images/logo2.png" alt=""></a>
+        </div>
+        <div class="nav_options">
+            <ul>
+                <li>
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9KA9XMSALSZFY"><img src="images/online-store.png" alt="carrito.png"></a>
+                </li>
+                <li><a href="calendar.html">Shedule</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <!-- Aquí acaba el navbar -->
+    <!-- Aquí acaba el navbar -->
 
-  <section class="search_section">
-    <div class="search_box">
-      <form action="">
-        <div class="input_part">
-          <label for="origen">origen</label>
-          <br>
-          <input type="text" name="origen" placeholder="Ingresa tu cuidad">
-        </div>
-        <div class="input_part">
-          <label for="destino">destino</label>
-          <br>
-          <input type="text" name="destino" placeholder="Ingresa tu Destino">
-        </div>
-        <div class="input_part">
-          <label for="fecha">fechas</label>
-          <br>
-          <input type="text" name="fecha_ida" placeholder="ida">
-        </div>
-        <input type="text" name="fecha_vuelta" placeholder="vuelta">
-        <div class="input_part">
-          <label for="habitaciones">habitaciones</label>
-          <br>
-          <input type="text" name="habitaciones">
-        </div>
-        <div class="input_part">
-          <label for="guests">personas</label>
-          <br>
-          <input type="text" name="guests">
-        </div>
-        <button type="">Buscar</button>
-      </form>
-    </div>
-  </section>
+    <section class="search_section">
+        <div class="search_box">
+            <form action="">
+                <div class="input_part">
+                    <label for="origin">origen</label>
+                    <br>
+                    <div class="input_destiny">
+                        <i class="icon-target icon_location_destiny"></i>
+                        <input class="input_origin" type="text" name="origen" placeholder="Ingresa tu cuidad">
+                    </div>
+                </div>
+                <div class="input_part">
+                    <label for="destino">destino</label>
+                    <br>
+                    <div class="input_destiny">
+                        <input class="input_destiny" type="text" name="destino" placeholder="Ingresa tu Destino">
+                        <i class="icon-location icon_location_destiny"></i>
+                    </div>
+                </div>
+                <div class="input_part">
+                    <label for="fecha">fechas</label>
+                    <br>
+                    <div class="input_destiny">
+                        <i class="icon-calendar-o icon_location_destiny"></i>
+                        <input type="text" name="fecha_ida" placeholder="ida">
+                    </div>
 
-  <div class="main_section">
-    <h1 class="fadeIn">
-      Ques esperas haz tu reserva ya
-    </h1>
-  </div>
+                </div>
+                <div class="input_part">
+                    <br>
+                    <div class="input_destiny">
+                        <input type="text" name="fecha_vuelta" placeholder="vuelta">
+                        <i class="icon-calendar-o icon_location_destiny"></i>
+                    </div>
+                </div>
 
-  <!-- Here starts the section of products -->
-  <div class="products">
-    <div class="product  fadeInUp">
-      <div class="content">
-        <div class="img_content">
-          <img src="images/miami.jpg" alt="">
+                <div class="input_part">
+                    <label for="habitaciones">habitaciones</label>
+                    <br>
+                    <div class="input_destiny">
+                        <i class="icon-bed icon_location_destiny"></i>
+                        <input type="number" name="habitaciones" value="1">
+                    </div>
+                </div>
+                <div class="input_part">
+                    <label for="guests">personas</label>
+                    <br>
+                    <div class="input_destiny">
+                        <i class="icon-user icon_location_destiny"></i>
+                        <input type="number" name="guests" value="1" onkeypress="">
+                    </div>
+                </div>
+            </form>
+            <div class="search_box_button">
+                <button type="button" class="search_button">Search</button>
+            </div>
         </div>
-        <h1>Miami</h1>
-        <p>Miles de productos hay en el mercado, lorempero nada como una caja con gatitos</p>
-        <a href="register.html"><button class="main_button">Lo quiero</button></a>
 
-      </div>
-    </div>
-    <div class="product fadeInUp">
-      <div class="content">
-        <div class="img_content">
-          <img src="images/santa_marta.jpg" alt="">
-        </div>
-        <h1>Santa Marta</h1>
-        <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
-        <a href="register.html"><button class="main_button">Lo quiero</button></a>
-      </div>
-    </div>
-  </div>
-  <!-- here finish the section products -->
-  <!-- here start the section sections -->
-  <div class="sections">
-    <div class="section">
-      <div class="content">
-        <div class="img_content_section">
-          <img src="images/sale.png" alt="sale.png">
-        </div>
-        <h1>Sales</h1>
-        <p class="text_section">Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+    </section>
 
-      </div>
+    <div class="main_section">
+        <h1 class="fadeIn">
+            Que esperas haz tu reserva ya
+        </h1>
     </div>
-    <div class="section">
-      <div class="content">
-        <div class="img_content_section">
-          <img src="images/hotel.png" alt="">
-        </div>
-        <h1>Hotel</h1>
-        <p class="text_section">Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
 
-      </div>
-    </div>
-    <div class="section">
-      <div class="content">
-        <div class="img_content_section">
-          <img src="images/calendar.png" alt="">
-        </div>
-        <h1>Calendar</h1>
-        <p class="text_section">Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+    <!-- Here starts the section of products -->
+    <div class="products">
+        <div class="product  fadeInUp">
+            <div class="content">
+                <div class="img_content">
+                    <img src="images/miami.jpg" alt="">
+                </div>
+                <h1>Miami</h1>
+                <p>Miles de productos hay en el mercado, lorempero nada como una caja con gatitos</p>
+                <a href="register.html"><button class="main_button">Lo quiero</button></a>
 
-      </div>
+            </div>
+        </div>
+        <div class="product fadeInUp">
+            <div class="content">
+                <div class="img_content">
+                    <img src="images/santa_marta.jpg" alt="">
+                </div>
+                <h1>Santa Marta</h1>
+                <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+                <a href="register.html"><button class="main_button">Lo quiero</button></a>
+            </div>
+        </div>
     </div>
-  </div>
-  <!-- Here  finish the section of sections -->
-  <!-- Here starts the section of comments -->
-  <div class="coments">
-    <div class="coment">
-      <div class="content">
-        <div class="img_content_coment">
-          <img src="images/p1.png" alt="">
-        </div>
-        <div class="text">
-          <h1>Joseph</h1>
-          <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
-        </div>
-      </div>
-    </div>
-    <div class="coment">
-      <div class="content">
-        <div class="img_content_coment">
-          <img src="images/p2.png" alt="">
-        </div>
-        <div class="text">
-          <h1>Caroline</h1>
-          <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
-        </div>
-      </div>
-    </div>
-    <div class="coment">
-      <div class="content">
-        <div class="img_content_coment">
-          <img src="images/p3.png" alt="">
-        </div>
-        <div class="text">
-          <h1>Dave</h1>
-          <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
-        </div>
-      </div>
-    </div>
-    <div class="coment">
-      <div class="content">
-        <div class="img_content_coment">
-          <img src="images/p4.png" alt="">
-        </div>
-        <div class="text">
-          <h1>Malcom</h1>
-          <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
-        </div>
-      </div>
-    </div>
-  </div>
+    <!-- here finish the section products -->
+    <!-- here start the section sections -->
+    <div class="sections">
+        <div class="section">
+            <div class="content">
+                <div class="img_content_section">
+                    <img src="images/sale.png" alt="sale.png">
+                </div>
+                <h1>Sales</h1>
+                <p class="text_section">Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
 
-  <!-- Aqui termina la seccion de comentarios -->
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <div class="img_content_section">
+                    <img src="images/hotel.png" alt="">
+                </div>
+                <h1>Hotel</h1>
+                <p class="text_section">Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
 
-  <!-- footer comienza aqui -->
-  <footer class="fadeInDown">
-    <div class="option">Terminos y condiciones</div>
-    <div class="option">contacto@brand.com</div>
-  </footer>
-  <!-- El footer termina aqui -->
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <div class="img_content_section">
+                    <img src="images/calendar.png" alt="">
+                </div>
+                <h1>Calendar</h1>
+                <p class="text_section">Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
 
-  <script src="scripts/scrip.js"></script>
+            </div>
+        </div>
+    </div>
+    <!-- Here  finish the section of sections -->
+    <!-- Here starts the section of comments -->
+    <div class="coments">
+        <div class="coment">
+            <div class="content">
+                <div class="img_content_coment">
+                    <img src="images/p1.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>Joseph</h1>
+                    <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+                </div>
+            </div>
+        </div>
+        <div class="coment">
+            <div class="content">
+                <div class="img_content_coment">
+                    <img src="images/p2.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>Caroline</h1>
+                    <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+                </div>
+            </div>
+        </div>
+        <div class="coment">
+            <div class="content">
+                <div class="img_content_coment">
+                    <img src="images/p3.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>Dave</h1>
+                    <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+                </div>
+            </div>
+        </div>
+        <div class="coment">
+            <div class="content">
+                <div class="img_content_coment">
+                    <img src="images/p4.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>Malcom</h1>
+                    <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aqui termina la seccion de comentarios -->
+
+    <!-- footer comienza aqui -->
+    <footer class="fadeInDown">
+        <div class="option">Terminos y condiciones</div>
+        <div class="option">contacto@brand.com</div>
+    </footer>
+    <!-- El footer termina aqui -->
+
+    <script src="scripts/scrip.js"></script>
 </body>
 
 </html>

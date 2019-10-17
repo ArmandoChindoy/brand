@@ -6,234 +6,321 @@
 #  \___/____/____/··
 #  ·················
 */
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-/* -------------Variables */
-:root{
---grey-color:#282828;
---white-color:white;
---black-color:#313337;
-/* Tipografía */
---normal:12px;
-/* Espaciado */
---space:10px;
---space-2:20px;
-/* Box shadow */
---box:0px 0 2px 1px #e6e5e9;
-}
 
 /* -------------Variables */
-html,body{
-  padding:0px;
-  margin:0px;
-  font-size: var(--normal);
-  font-family: 'Open Sans', sans-serif;
-}
-p,label{
-  font-size: var(--normal);
-}
-label{
-  padding-bottom: var(--space);
+
+:root {
+    --grey-color: #282828;
+    --white-color: white;
+    --black-color: #313337;
+    /* Tipografía */
+    --normal: 12px;
+    /* Espaciado */
+    --space: 10px;
+    --space-2: 20px;
+    /* Box shadow */
+    --box: 0px 0 2px 1px #e6e5e9;
 }
 
 
-nav{
-  display: flex;
-  background-color: var(--grey-color);
-  color: var(--white-color);
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  min-height: 60px;
-  padding: var(--space);
-}
-nav ul{
-  display: flex;
-  padding-right:  10px;
+/* -------------Variables */
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
 }
 
-nav ul li{
-  padding-left: 20px;
-  list-style: none;
-  margin-right: var(--space);
+p,
+label {
+    font-size: var(--normal);
 }
 
-nav li a{
-  font-size: var(--normal);
-  color: var(--white-color);
-  text-decoration: none;
+label {
+    padding-bottom: var(--space);
 }
 
-nav li a:hover{
-  text-decoration: underline;
+nav {
+    display: flex;
+    background-color: var(--grey-color);
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+}
 
+nav ul {
+    display: flex;
+    padding-right: 10px;
 }
-nav li:hover{
-  transform: scale(1.10);
-  transition: linear;
+
+nav ul li {
+    padding-left: 20px;
+    list-style: none;
+    margin-right: var(--space);
 }
-hr{
-  opacity: .2;
+
+nav li a {
+    font-size: var(--normal);
+    color: var(--white-color);
+    text-decoration: none;
 }
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+nav li:hover {
+    transform: scale(1.10);
+    transition: linear;
+}
+
+hr {
+    opacity: .2;
+}
+
 
 /* ---------------------------Search_Box */
 
-.search_section{
-  display: flex;
-  height: 300px;
-  align-items: center;
+.search_section {
+    display: flex;
+    height: 200px;
+    align-items: center;
 }
-.input_part{
-  display: inline-block;
+
+.search_box {
+    display: block;
+    width: 70vw;
+    margin: auto;
+    font-style: "Open-sans";
 }
-.input_part label{
-text-transform: uppercase;
+
+.search_box form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
 }
-.input_part input{
-  border: lightgray solid 2px;
+
+.input_part {
+    display: block;
 }
-.search_box{
-  width: 90vw;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  margin: auto;
-  font-style:"Open-sans";
+
+.input_part label {
+    text-transform: uppercase;
+}
+
+.input_part input {
+    border: initial;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.icon_location_destiny {
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+    width: 24px;
+    height: 24px;
+}
+
+.icon_location_destiny {
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+    width: 24px;
+    height: 24px;
+}
+
+.input_destiny {
+    position: relative;
+    display: flex;
+    border: solid lightgray 1px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.input_destiny {
+    padding-left: 20px;
+}
+
+.search_box_button {
+    text-align: center;
+}
+
+.search_button {
+    background-color: black;
+    color: white;
+    border: initial;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 10px 0;
 }
 
 
 /* ------------------------------Here finish the Search_Box */
 
+
 /* ------------------------ Main section */
 
-.main_section{
-  padding: 15%;
-  text-align: center;
-
+.main_section {
+    padding: 3%;
+    text-align: center;
 }
 
-.products{
-  background-image: url("../images/curve.png");
-  height: 95px;
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  padding:15%;
-  display: flex;
+.products {
+    background-image: url("../images/curve.png");
+    height: 95px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 15%;
+    display: flex;
 }
 
-.product{
-  padding: var(--space);
-  margin-top: -226px;
-}
-.product p{
-  width: 100%;
-}
-.content{
-  background-color: var(--white-color);
-  padding: var(--space-2);
-  box-shadow: var(--box);
-  border-radius: 3px;
-}
-.img_content{
-  text-align: center;
-}
-.img_content img{
-  height: 150px;
-  width: 100%;
+.product {
+    padding: var(--space);
+    margin-top: -226px;
 }
 
-.main_button{
-  background-color: var(--grey-color);
-  width: 100%;
-  padding: var(--space-2);
-  font-size: var(--normal);
-  color: var(--white-color);
-  border:0;
-  cursor: pointer;
-  border-radius: 2px;
+.product p {
+    width: 100%;
 }
 
-.main_button:hover{
-  background-color: var(--white-color);
-  color: var(--black-color);
-  border: var(--grey-color) solid 1px;
+.content {
+    background-color: var(--white-color);
+    padding: var(--space-2);
+    box-shadow: var(--box);
+    border-radius: 3px;
 }
-.sections{
-  padding: 10%;
-  display: flex;
+
+.img_content {
+    text-align: center;
 }
-.section{
-  padding: 0px 5%;
-  text-align: center;
+
+.img_content img {
+    height: 150px;
+    width: 100%;
 }
-.section:hover{
-border-radius: 5px;
-  transform: scale(1.05);
-  transition: linear;
+
+.main_button {
+    background-color: var(--grey-color);
+    width: 100%;
+    padding: var(--space-2);
+    font-size: var(--normal);
+    color: var(--white-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
 }
-.img_content_section img{
-  max-height: 150px;
+
+.main_button:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border: var(--grey-color) solid 1px;
 }
-.text_section{
-  text-align: justify;
+
+.sections {
+    padding: 10%;
+    display: flex;
 }
-.coments{
-  padding: 5%;
-  display: flex;
+
+.section {
+    padding: 0px 5%;
+    text-align: center;
 }
-.coment{
-  padding: var(--space);
+
+.section:hover {
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition: linear;
 }
+
+.img_content_section img {
+    max-height: 150px;
+}
+
+.text_section {
+    text-align: justify;
+}
+
+.coments {
+    padding: 5%;
+    display: flex;
+}
+
+.coment {
+    padding: var(--space);
+}
+
 .coment:hover {
-  border-radius: 5px;
-  transform: scale(1.05);
-  transition: linear;
-}
-.img_content_coment img{
-  width: 100%;
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition: linear;
 }
 
-.coment .text{
-  padding: var(--space);
+.img_content_coment img {
+    width: 100%;
 }
+
+.coment .text {
+    padding: var(--space);
+}
+
 
 /* --------------------------------------modulos */
-.formulario_venta{
-  padding: 15% 10%;
+
+.formulario_venta {
+    padding: 15% 10%;
 }
-.modulo{
-background: var(--white-color);
-box-shadow: var(--box);
-padding: var(--space);
+
+.modulo {
+    background: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
 }
-.data{
-margin-top: var(--space);
-width: 100%;
-height: 35px;
-border-radius: 2px;
-border:1px solid var(--grey-color);
-box-sizing: border-box;
+
+.data {
+    margin-top: var(--space);
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid var(--grey-color);
+    box-sizing: border-box;
 }
-.modulo_image{
-  text-align: center;
-  width: 100%;
+
+.modulo_image {
+    text-align: center;
+    width: 100%;
 }
-.modulo_image img{
-  width: 100%;
+
+.modulo_image img {
+    width: 100%;
 }
-.modulo .main_button{
-  margin-top: var(--space);
+
+.modulo .main_button {
+    margin-top: var(--space);
 }
+
+
 /* -------------------------------------- fin de losmodulos */
 
+
 /*--------------------------------------- Footer*/
-footer{
-  position: relative;
-  bottom: 0px;
-  display: flex;
-  justify-content: space-between;
-  font-size: var(--normal);
-  background-color: var(--black-color);
-  padding: var(--space);
-  color: var(--white-color);
+
+footer {
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--normal);
+    background-color: var(--black-color);
+    padding: var(--space);
+    color: var(--white-color);
 }

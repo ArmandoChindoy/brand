@@ -1,11 +1,23 @@
-<<<<<<< HEAD
-var a=1;
-var b=2;
-var nombre="Armando";
-var apellido="Chindoy";
+const ipad = window.matchMedia('screen and (max-width:767px)');
+const menu = document.querySelector('.menu');
+const burgerButton = document.querySelector('#burger-menu');
 
-var nombreCompleto=nombre+" "+apellido;
+ipad.addListener(validation);
 
-alert("Hola "+nombreCompleto);
-=======
->>>>>>> 99a7d57eaa1c4a5a598c696f329e820a28e8da6a
+function validation(event) {
+    if (event.matches) {
+        burgerButton.addEventListener('click', hideShow);
+    } else {
+        burgerButton.removeEventListener('click', hideShow);
+    }
+}
+
+validation(ipad);
+
+function hideShow() {
+    if (menu.classList.contains('is-active')) {
+        menu.classList.remove('is-active');
+    } else {
+        menu.classList.add('is-active');
+    }
+}

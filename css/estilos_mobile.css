@@ -1,30 +1,52 @@
- @media (max-width: 600px){
-	.mainsection{
-		padding: 4%;
-	}
-	.products{
-		display: inherit;
-		height: auto;
-	}
-	.product{
-		margin-top:auto; 
-	}
-	.sections{
-		display: inherit;
-		height: auto;
-	}
-	.section{
-		margin-top:auto;
-		padding: 5%; 
-	}
-	.coments{
-		display: inherit;
-		height: auto;
-		
-	}
-	.coment{
-		margin-top: auto;
-		padding: 5%;
-	}
-
-}
+ @media screen and (max-width: 767px) {
+     #nav_button {
+         border: initial;
+         border-radius: initial;
+         height: inherit;
+     }
+     #nav_button:hover {
+         box-shadow: initial;
+     }
+     .menu {
+         position: fixed;
+         background: #026fff;
+         opacity: .9;
+         z-index: 4;
+         top: 0;
+         left: -100vw;
+         width: 100vw;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         transition: .3s;
+     }
+     .menu.is-active {
+         left: 0;
+     }
+     .mainsection {
+         padding: 4%;
+     }
+     .products {
+         display: inherit;
+         height: auto;
+     }
+     .product {
+         margin-top: auto;
+     }
+     .sections {
+         display: inherit;
+         height: auto;
+     }
+     .section {
+         margin-top: auto;
+         padding: 5%;
+     }
+     .coments {
+         display: inherit;
+         height: auto;
+     }
+     .coment {
+         margin-top: auto;
+         padding: 5%;
+     }
+ }

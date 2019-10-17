@@ -7,18 +7,29 @@
      #nav_button:hover {
          box-shadow: initial;
      }
+     nav {
+         justify-content: center;
+     }
+     .burger-button {
+         display: flex;
+     }
      .menu {
          position: fixed;
          background: #026fff;
          opacity: .9;
-         z-index: 4;
+         z-index: 13;
          top: 0;
          left: -100vw;
          width: 100vw;
+         height: 100vw;
+         bottom: 0;
          display: flex;
          align-items: center;
          justify-content: center;
          transition: .3s;
+     }
+     .menu ul {
+         display: block;
      }
      .menu.is-active {
          left: 0;

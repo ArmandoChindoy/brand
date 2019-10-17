@@ -52,6 +52,7 @@ nav {
     align-items: center;
     width: 100%;
     min-height: 60px;
+    position: 1;
 }
 
 nav ul {
@@ -82,6 +83,22 @@ nav li:hover {
 
 hr {
     opacity: .2;
+}
+
+.burger-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .8);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 12;
+    left: 5px;
+    top: 5px;
+    color: white;
+    display: none;
 }
 
 
@@ -130,16 +147,9 @@ hr {
     height: 24px;
 }
 
-.icon_location_destiny {
-    position: absolute;
-    bottom: 2px;
-    left: 5px;
-    width: 24px;
-    height: 24px;
-}
-
 .input_destiny {
     position: relative;
+    z-index: 1;
     display: flex;
     border: solid lightgray 1px;
     border-radius: 15px;
@@ -315,8 +325,6 @@ hr {
 /*--------------------------------------- Footer*/
 
 footer {
-    position: relative;
-    bottom: 0px;
     display: flex;
     justify-content: space-between;
     font-size: var(--normal);

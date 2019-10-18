@@ -1,4 +1,7 @@
  @media screen and (max-width: 767px) {
+     .search_section {
+         height: auto;
+     }
      #nav_button {
          border: initial;
          border-radius: initial;
@@ -21,7 +24,6 @@
          top: 0;
          left: -100vw;
          width: 100vw;
-         height: 100vw;
          bottom: 0;
          display: flex;
          align-items: center;

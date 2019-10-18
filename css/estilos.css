@@ -52,7 +52,6 @@ nav {
     align-items: center;
     width: 100%;
     min-height: 60px;
-    position: 1;
 }
 
 nav ul {
@@ -141,6 +140,7 @@ hr {
 
 .icon_location_destiny {
     position: absolute;
+    z-index: 0;
     bottom: 2px;
     left: 5px;
     width: 24px;
@@ -149,7 +149,7 @@ hr {
 
 .input_destiny {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     display: flex;
     border: solid lightgray 1px;
     border-radius: 15px;
@@ -186,17 +186,17 @@ hr {
 
 .products {
     background-image: url("../images/curve.png");
-    height: 95px;
+    height: auto;
     background-size: cover;
-    background-position: center top;
+    background-position: center center;
     background-repeat: no-repeat;
     padding: 15%;
     display: flex;
+    justify-content: center;
 }
 
 .product {
     padding: var(--space);
-    margin-top: -226px;
 }
 
 .product p {

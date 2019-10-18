@@ -29,6 +29,7 @@
          align-items: center;
          justify-content: center;
          transition: .3s;
+         overflow: hidden;
      }
      .menu ul {
          display: block;

@@ -108,6 +108,7 @@ hr {
     display: flex;
     height: 200px;
     align-items: center;
+    height: auto;
 }
 
 .search_box {

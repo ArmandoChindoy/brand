@@ -333,4 +333,16 @@ footer {
     background-color: var(--black-color);
     padding: var(--space);
     color: var(--white-color);
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+.footer span{
+    padding: 10px;
+    vertical-align: middle;
+}
+.footer img{
+    width: 50px;
+    height: 50px;
+    align-items: center;
 }

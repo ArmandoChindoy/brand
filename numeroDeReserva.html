@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="images/hotel.png">
+    <link rel="stylesheet" href="css/estilos_mobile.css">
+    <link rel="stylesheet" href="Icons/style.css">
+
+    <title>Brand</title>
+</head>
+
+<body>
+    <!-- Aquí empieza el navbar -->
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <nav class="fadeInDown ">
+        <div class="brand_image">
+            <a href="index.html"><img src="images/logo2.png" alt=""></a>
+        </div>
+        <div class="nav_options menu">
+            <ul>
+                <li>
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9KA9XMSALSZFY"><img src="images/online-store.png" alt="carrito.png"></a>
+                </li>
+                <li>
+                    <a href="register.html">Registrarse</a>
+                </li>
+                <li>
+                    <a href="numeroDeReserva.html">Reservas</a>
+                </li>
+                <li>
+                    <a href="calendar.html">BD</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Aquí acaba el navbar -->
+    <div class="main_section">
+        <h1 class="fadeIn">
+            Mira tu reserva
+        </h1>
+    </div>
+    <!-- Aqui comienza el formulario del cliente -->
+    <div class="formulario_venta fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <div class="modulo">
+                        <form action="php/mirarReserva.php" method="POST">
+                            <div class="input_part">
+                                <label for="idReserva">Numero de reserva</label>
+                                <br>
+                            </div>
+                            <input class="inputReserva" type="text" name="idReserva" placeholder="Numero De Reserva">
+                            <input type="submit" class="main_button" name="submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Aqui termina el formulario del cliente -->
+    <!-- Aqui termina la reserva -->
+    <!-- footer comienza aqui -->
+    <footer class="fadeInDown">
+        <div class="option">Terminos y condiciones</div>
+        <div class="option">contacto@brand.com</div>
+    </footer>
+    <!-- El footer termina aqui -->
+    <script src="scripts/script.js"></script>
+    <script src="scripts/script2.js"></script>
+</body>
+
+</html>

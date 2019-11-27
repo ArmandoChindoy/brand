@@ -102,83 +102,6 @@ hr {
 }
 
 
-/* ---------------------------Search_Box */
-
-.search_section {
-    display: flex;
-    height: 200px;
-    align-items: center;
-    height: auto;
-}
-
-.search_box {
-    display: block;
-    width: 70vw;
-    margin: auto;
-    font-style: "Open-sans";
-}
-
-.search_box form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: auto;
-}
-
-.input_part {
-    display: block;
-}
-
-.input_part label {
-    text-transform: uppercase;
-}
-
-.input_part input {
-    border: initial;
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px 0;
-}
-
-.icon_location_destiny {
-    position: absolute;
-    z-index: 0;
-    bottom: 2px;
-    left: 5px;
-    width: 24px;
-    height: 24px;
-}
-
-.input_destiny {
-    position: relative;
-    z-index: 0;
-    display: flex;
-    border: solid lightgray 1px;
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.input_destiny {
-    padding-left: 20px;
-}
-
-.search_box_button {
-    text-align: center;
-}
-
-.search_button {
-    background-color: black;
-    color: white;
-    border: initial;
-    padding: 5px 10px;
-    border-radius: 15px;
-    margin: 10px 0;
-}
-
-
-/* ------------------------------Here finish the Search_Box */
-
-
 /* ------------------------ Main section */
 
 .main_section {
@@ -288,8 +211,93 @@ hr {
 
 /* --------------------------------------modulos */
 
+
+/* ---------------------------Search_Box */
+
+.search_section {
+    display: flex;
+    height: auto;
+    align-items: center;
+    height: auto;
+    padding: 10% 0;
+}
+
+.search_box {
+    display: block;
+    width: 70vw;
+    margin: auto;
+    font-style: "Open-sans";
+    border: lightgray solid 1px;
+    box-shadow: var(--box);
+}
+
+.search_box form {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.input_part {
+    display: block;
+}
+
+.input_part label {
+    padding: 20px 0px;
+    text-transform: uppercase;
+}
+
+.input_part input,
+select {
+    border: initial;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 0;
+    overflow: visible;
+}
+
+.icon_location_destiny {
+    position: absolute;
+    z-index: 0;
+    bottom: 2px;
+    left: 5px;
+    width: 24px;
+    height: 24px;
+}
+
+.input_destiny {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    border: solid lightgray 1px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.input_destiny {
+    padding-left: 20px;
+}
+
+.search_box_button {
+    text-align: center;
+}
+
+.search_button {
+    background-color: black;
+    color: white;
+    border: initial;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+
+/* ------------------------------Here finish the Search_Box */
+
 .formulario_venta {
-    padding: 15% 10%;
+    padding: 8% 10%;
+    height: 100vh;
 }
 
 .modulo {
@@ -320,6 +328,14 @@ hr {
     margin-top: var(--space);
 }
 
+.inputReserva {
+    width: 100%;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 10px 0;
+    overflow: visible;
+}
+
 
 /* -------------------------------------- fin de losmodulos */
 
@@ -333,4 +349,36 @@ footer {
     background-color: var(--black-color);
     padding: var(--space);
     color: var(--white-color);
+}
+
+
+/* ---------------------------------------- Mensaje con idReserva */
+
+.messageIdReserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.deleteButton_container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.deleteButton {
+    height: 100%;
+    width: auto;
+    text-decoration: none;
+    color: var(--white-color);
+    background: var(--black-color);
+}
+
+.deleteButton:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border: var(--grey-color) solid 1px;
 }

@@ -63,4 +63,11 @@
          margin-top: auto;
          padding: 5%;
      }
+     .formulario_venta {
+         height: auto;
+     }
+     footer {
+         position: fixed;
+         bottom: 0px;
+     }
  }

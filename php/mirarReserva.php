@@ -1,5 +1,5 @@
 <?php
-include('conexion.php');
+include('conexion2.php');
 
 $idReserva=$_POST['idReserva'];
 
@@ -13,7 +13,6 @@ $idFactura = $row['idFactura'];
 
 
 $reserva = array($row['origen'],$row['destino'], $row['ida'], $row['vuelta'],$row['idHabitacion'] ,$row['personas']);
-print_r($reserva);
 
 $query = "SELECT * FROM habitaciones WHERE idHabitacion=$reserva[4]";
 $resultado = $db_connection->query($query);
@@ -51,7 +50,7 @@ $precioFactura=$row['precio'];
     <i class="icon-menu burger-button" id="burger-menu"></i>
     <nav class="fadeInDown ">
         <div class="brand_image">
-            <a href="index.html"><img src="../images/logo2.png" alt=""></a>
+            <a href="../index.html"><img src="../images/logo2.png" alt=""></a>
         </div>
         <div class="nav_options menu">
             <ul>
@@ -65,7 +64,7 @@ $precioFactura=$row['precio'];
                     <a href="../numeroDeReserva.html">Reservas</a>
                 </li>
                 <li>
-                    <a href="../calendar.html">BD</a>
+                    <a href="../tablas.html">BD</a>
                 </li>
             </ul>
         </div>

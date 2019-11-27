@@ -297,7 +297,7 @@ select {
 
 .formulario_venta {
     padding: 8% 10%;
-    height: 100vh;
+    height: auto;
 }
 
 .modulo {
@@ -381,4 +381,11 @@ footer {
     background-color: var(--white-color);
     color: var(--black-color);
     border: var(--grey-color) solid 1px;
+}
+
+.tablas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px red;
 }
